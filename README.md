@@ -50,7 +50,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     
 ### 5.MODELO CONCEITUAL<br>
         
-![Alt text](https://github.com/RubensJr21/FCS/blob/master/images/Modelo%20Conceitual%20v2.png?raw=true "Modelo Conceitual")
+![Modelo Conceitual](/images/Modelo%20Conceitual%20v2.png "Modelo Conceitual")
 
 #### 5.1 Validação do Modelo Conceitual
     [Grupo01]: [Nomes dos que participaram na avaliação]
@@ -65,9 +65,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 
 ### 6	MODELO LÓGICO<br>
-        a) inclusão do esquema lógico do banco de dados
-        b) verificação de correspondencia com o modelo conceitual 
-        (não serão aceitos modelos que não estejam em conformidade)
+![Modelo lógico](/images/Modelo%20Lógico.png "Modelo Lógico")
 
 ### 7	MODELO FÍSICO
 
