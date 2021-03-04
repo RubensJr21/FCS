@@ -69,18 +69,9 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
 
-### 7	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas em SQL/DDL 
-        (criação de tabelas, alterações, etc..) 
-        
-       
-### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
-        (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
-#### 8.1 EXCLUSÃO (DROP)
+### 7	MODELO FÍSICO
+
+#### 7.1 EXCLUSÃO (DROP)
 ~~~SQL
 DROP TABLE FUNCIONARIO;
 
@@ -104,7 +95,7 @@ DROP TABLE ESTOQUE;
 
 DROP TABLE SABOR;
 ~~~
-#### 8.2 CRIAÇÃO (CREATE)
+#### 7.2 CRIAÇÃO (CREATE)
 ~~~SQL
 CREATE TABLE FUNCIONARIO (
     id VARCHAR(3) PRIMARY KEY,
@@ -229,7 +220,7 @@ ALTER TABLE SABOR ADD CONSTRAINT SABORES__fk_PRODUTOS_id
     FOREIGN KEY (fk_PRODUTOS_id)
     REFERENCES PRODUTO (id);
 ~~~
-#### 8.3 INSERÇÃO (INSERT)
+#### 7.3 INSERÇÃO (INSERT)
 ~~~SQL
 /* INSERCAO - TABELA FUNCIONARIO */
 
@@ -384,6 +375,12 @@ VALUES('idA', 'id2','05-03-2015','06-03-2015','14:30','cartao','50.00','50.00',2
 ('idA', 'id1','10-03-2015','10-03-2015','14:31','cartao','23.99','23.99',30,'');
 ~~~
 
+### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
+        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
+        (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
+        b) Criar um novo banco de dados para testar a restauracao 
+        (em caso de falha na restauração o grupo não pontuará neste quesito)
+        c) formato .SQL
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
