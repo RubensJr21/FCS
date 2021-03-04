@@ -8,24 +8,16 @@ Integrantes do grupo<br>
 Graziene Martins:grazienemartins@yahoo.com.br<br>
 Lorhan de Souza:lorhan.s160@gmail.com<br>
 Rubens Jr:junior.correa2001@gmail.com<br>
-<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
 Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
 <br>e motivação da escolha realizada. <br>
 
-> A empresa "Devcom Projetos" visa colaborar com desenvolvimento de projetos para uma sociedade melhor. Sabendo-se dos desafios para gerenciar projetos dentro de uma empresa e visando unir as informações relativas a funcionários, departamentos e projetos em um mesmo local, ficamos motivados com o desenvolvimento deste sistema. O Sistema "Devcom" tem como objetivo gerenciar todas as informações ao desenvolvimento das atividades de projetos em diversas localidades do país. Para realizar suas operações adequadamente e empresa necessita que sistema que armazene informações relativas aos Projetos, Departamentos e Empregados, além de também armazenar dados sobre  Dependentes e Históricos de Salário dos empregados. O sistema deverá gerar um conjunto de relatórios que por sua vez atenderá os anseios da empresa em questão.
- 
+> Em meio à pandemia uma mulher precisou arrumar uma forma para ganhar dinheiro já que não estava trabalhando, foi aí então que surgiu a Doces sonhos, mas como qualquer empresa no ramo de vendas ela necessitou de ter um controle sobre o que era vendido, para saber o faturamento e uma estimativa de produção. Seu filho fez em uma planilha algo que a ajudou bastante um tempo, porém o problema veio quando ela criou novos produtos que não está possível adicionar, pois ele usava uma forma estática o VBA (Visual Basic Advanced) o que está por trás das macros e funções do excel.
 
 ### 3.MINI-MUNDO<br>
 
-Descrever o mini-mundo! (Não deve ser maior do que 30 linhas, se necessário resumir para justar) <br>
-Entrevista com o usuário e identificação dos requisitos.(quando for o caso de sistemas com cliente  real)<br>
-Descrição textual das regras de negócio definidas como um  subconjunto do mundo real 
-cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
-gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
-
-> O sistema proposto para a "Devcom Projetos conterá as informacões aqui detalhadas. Dos Projetos serão armazenados o número, nome e cidade. Dos Departamentos serão armazenados o número e nome. O cliente destacou que cada projeto pode ter vários departamentos auxiliando no seu desenvolvimento, e cada departamento pode estar envolvido em vários projetos. Os dados relativos aos empregados que serão armazenados são: rg, nome, cpf, salário, data inicial do salario e supervisor de cada empregado. É importante destacar que cada empregado pode ser supervisionado por outro empregado, e obrigatoriamente deve estar alocado a um único departamento, mas pode gerenciar vários departamentos ou não gerenciar nenhum. Um empregado também pode participar de vários projetos, caso seja necessário, mas não precisa obrigatoriamente estar alocado em algum projeto. Com relação aos dependentes serão armazenadas as informações de nome do dependente, data de nascimento, sexo e grau de parentesco. Cada empregado pode ter vários dependentes, mas um dependente esta associado apenas a um único empregado. Com relação ao histórico de salário devemos armazenar as informações de valor do salário, data de início do salário no período e data final do salário no período. É importante lembrar que cada funcionario pode ter diversos eventos de histórico de salário associados a ele visto que este dado pode ser alterado várias vezes. 
+> Ela então solicitou que fosse feito um sistema de gerenciamento e controle de vendas para a sua empresa. Nesse sistema é necessário saber algumas informações do cliente como: Nome, telefone, endereço. Da venda necessita de ter algumas outras informações como: data de registro, data de entrega, forma de pagamento, se precisa de troco, caso afirmativo para qual valor, quais produtos, qual quantidade desses produtos, e os que tiverem uma especificação qual sabor do produto, saber também o total da vendo, total de troco e um estado de pedido, para saber se já foi entregue e se não, em qual estado está, e informações valor total de cada produto. Do produto se faz necessário saber: nome, valor, quantidade em estoque. E do funcionário é necessário saber: nome. Um cliente deve comprar 1 ou vários produtos. Um produto pode ser vendido para nenhum ou vários clientes. Um funcionário pode vender para nenhum ou vários clientes. Um cliente só pode ter sua venda concluída por apenas um funcionário. Um funcionário pode vender 1 ou vários produtos. Um produto pode ser vendido por 1 ou vários funcionários. 
 
 ### 4.PROTOTIPAÇÃO, PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
