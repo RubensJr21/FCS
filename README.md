@@ -5,9 +5,9 @@ Trabalho desenvolvido durante a disciplina de BD1
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-Graziene Martins:grazienemartins@yahoo.com.br<br>
-Lorhan de Souza:lorhan.s160@gmail.com<br>
-Rubens Jr:junior.correa2001@gmail.com<br>
+Graziene Martins: grazienemartins@yahoo.com.br<br>
+Lorhan de Souza: lorhan.s160@gmail.com<br>
+Rubens Jr: junior.correa2001@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
 Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
