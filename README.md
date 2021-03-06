@@ -36,8 +36,6 @@ A prototipação foi feita utilizando a ferramenta do balsamiq cloud. Essa proto
 * Relatório que mostre as informações relacionadas a todos empregados de empresa (sem excluir ninguém). As linhas resultantes devem conter informações sobre: rg, nome, salario do empregado, data de início do salario atual, nomes dos projetos que participa, quantidade de horas e localização nos referidos projetos, numero e nome dos departamentos aos quais está alocado, informações do historico de salário como inicio, fim, e valores de salarios antigos que foram inclusos na referida tabela (caso possuam informações na mesma), além de todas informações relativas aos dependentes. 
 >> ##### Observações: <br> a) perceba que este relatório pode conter linhas com alguns dados repetidos (mas não todos). <br>  b) para os empregados que não possuirem alguma destas informações o valor no registro deve aparecer sem informação/nulo. 
 * Relatório que obtenha a frequencia absoluta e frequencia relativa da quantidade de cpfs únicos no relatório anterior. Apresente os resultados ordenados de forma decrescente pela frequencia relativa.
-
- 
  
 #### 4.3 TABELA DE DADOS DO SISTEMA:
     a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas/registros de dados.
@@ -370,10 +368,8 @@ DROP TABLE IF EXISTS FORMA_DE_PAGAMENTO;
         c) formato .SQL
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
-    OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-
-
+[![Print_Notebook_Colab_FCS.png)](/images/Print_Notebook_Colab_FCS.png?raw=true "Notebook do FCS no Colab")](https://colab.research.google.com/github/RubensJr21/FCS/blob/master/Modelo_BD1_Iten_91_Trabalho_Grupo_Graziene_Lorhan_Rubens.ipynb#scrollTo=N0XOGRZl9nj0)
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
