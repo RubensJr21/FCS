@@ -384,7 +384,7 @@ DROP TABLE SABOR;
 
 Consultas reaalizadas utilizando Colab
 
-![FCS.ipynb] (\FCS.ipynb)
+![FCS.ipynb] (\https://github.com/RubensJr21/FCS/blob/master/FCS.ipynb)
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
