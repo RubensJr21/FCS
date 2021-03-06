@@ -382,9 +382,7 @@ DROP TABLE SABOR;
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
-Consultas reaalizadas utilizando Colab
 
-![FCS.ipynb] (\https://github.com/RubensJr21/FCS/blob/master/FCS.ipynb)
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
