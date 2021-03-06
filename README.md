@@ -378,39 +378,18 @@ VALUES('idP1', 1, 3, 4, 'sabor1', ''),
 ('idP1', 5, 3, 1, 'sabor1', ''),
 ('idP1', 1, 3, 1, 'sabor1', '');
 ~~~
-#### EXCLUSÃO (DROP)
-~~~SQL
-DROP TABLE IF EXISTS VENDA_PRODUTO;
+>a) link do arquivo sql referente ao Backup: [Abrir Backup_BD_FCS.sql](/arquivos/Backup_BD_FCS.sql)<br>
+>b) link do arquivo de Backup do PgAdmin: [Abrir Backup_BD_FCS.backup](/arquivos/Backup_BD_FCS.backup)<br>
 
-DROP TABLE IF EXISTS VENDA;
-
-DROP TABLE IF EXISTS FUNCIONARIO;
-
-DROP TABLE IF EXISTS ESTOQUE;
-
-DROP TABLE IF EXISTS SABOR;
-
-DROP TABLE IF EXISTS PRODUTO;
-
-DROP TABLE IF EXISTS CATEGORIA;
-
-DROP TABLE IF EXISTS CLIENTE;
-
-DROP TABLE IF EXISTS ENDERECO;
-
-DROP TABLE IF EXISTS PEDIDO_ESTADO;
-
-DROP TABLE IF EXISTS FORMA_DE_PAGAMENTO;
-~~~
-        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
-        (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
+>a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico<br>
+>(Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)<br>
+>b) Criar um novo banco de dados para testar a restauracao <br>
+>(em caso de falha na restauração o grupo não pontuará neste quesito)<br>
+>c) formato .SQL<br>
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-[![Print_Notebook_Colab_FCS.png)](/images/Print_Notebook_Colab_FCS.png?raw=true "Notebook do FCS no Colab")](https://colab.research.google.com/github/RubensJr21/FCS/blob/master/Modelo_BD1_Iten_91_Trabalho_Grupo_Graziene_Lorhan_Rubens.ipynb#scrollTo=N0XOGRZl9nj0)
+[![Print_Notebook_Colab_FCS.png](/images/Print_Notebook_Colab_FCS.png?raw=true "Notebook do FCS no Colab")](https://colab.research.google.com/github/RubensJr21/FCS/blob/master/Modelo_BD1_Iten_91_Trabalho_Grupo_Graziene_Lorhan_Rubens.ipynb#scrollTo=N0XOGRZl9nj0)
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
