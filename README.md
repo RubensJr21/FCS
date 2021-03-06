@@ -53,12 +53,56 @@ A prototipação foi feita utilizando a ferramenta do balsamiq cloud. Essa proto
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
 #### 5.2 Descrição dos dados 
-    [objeto]: [descrição do objeto]
+    CATEGORIA: Indica os tipos aos quais um produto pertence (Doce, salgado, frio e etc..)
+        id: Identificador único para a categoria 
+        tipo: Nome da categoria
     
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
-
+    PRODUTO: Item a ser vendido
+        id: Identificador único para cada produto
+        nome: Nome de um produto
+        valor: Valor pelo qual o produto será vendido
+        active: Indica se o produto está disponível para venda
+    
+    ESTOQUE: Indica a quantidade de produtos disponíveis para vender
+        id_produto: Identificador já criado para um determinado produto
+        quantidade: Quatidade de um detereminado produto em estoque
+    
+    SABORES: Sabores de um produto
+        id: Identificador único para cada sabor
+        id_produto: Identificador de um determinado produto, este pode ser repetido, pois um produto pode ter vários sabores
+        sabor: Nome do sabor; tais como Chocolate, Morango, Tradicional e etc...
+    
+    FUNCIONARIO: Representa o funcionário da empresa
+        id: Identificador único para cada funcionário
+        nome_sobrenome: Nome do funcionário
+        funcao: Função de cada funcionário
+        senha: Guarda a senha do usuário
+    
+    CLIENTE: Guarda dados do usuário
+        id: Identificador único para cada cliente
+        nome: Este campo guarda o nome do usuário
+        sobrenome: Este campo guarda o sobrenome do usuário
+        telefone: Este campo guarda o telefone do usuário
+        endereço: Este campo guarda o endereço do usuário
+            tipo: Este campo guarda o tipo do endereço do cliente
+            logradouro_nome: Este campo guarda o nome do logradouro
+            numero: Este campo guarda o numero do endereço do cliente
+            bairro: Este campo guarda o bairro do endereço do cliente
+            municipio: Este campo guarda o município do endereço do cliente
+            estado_uf: Este campo guarda o estado do endereço do cliente
+            complemento: Este campo guarda um complemento do endereço do cliente
+            cep: Este campo guarda o cep do endereço do cliente
+    
+    VENDA: Essa tabela guarda informações sobre uma determinada venda
+        id: Identificador único para cada venda
+        data_registro: Este campo guarda a data que o pedido foi registrado
+        data_entrega: Este campo guarda a data para quando o pedido será
+        hora_entrega: Este campo guarda a hora para quando o pedido será
+        forma_pagamento: Este campo guarda qual será a forma de pagamento do pedido
+        valor_pago: Este campo guarda o valor que foi pago
+        total: Este campo guarda o valor total da venda
+        estado_pedido: Este campo guarda em que estado o pedido está (Se já foi entregue e não pago,
+                       se já foi pago e ainda não entregue, ou se já foi concluído)
 
 ### 6	MODELO LÓGICO<br>
 ![Modelo lógico](/images/Modelo%20Lógico.png "Modelo Lógico")
