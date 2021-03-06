@@ -197,7 +197,7 @@ ALTER TABLE SABOR ADD CONSTRAINT SABORES__fk_PRODUTOS_id
 /* INSERCAO - TABELA FUNCIONARIO */
 
 INSERT INTO FUNCIONARIO(id,nome_sobrenome ,senha ,funcao) 
-VALUES('id1', 'Ana da Silva', '1234','Atendente');
+VALUES('id1', 'Ana da Silva', '1234','Atendente'),
 ('id2', 'João Pedro da Silva', '1234','Atendente'),
 ('id3', 'Helena Soares', '1234','Gerente'),
 ('id4', 'Maria Eduarda Gomes', '1234','Atendente'),
@@ -211,7 +211,7 @@ VALUES('id1', 'Ana da Silva', '1234','Atendente');
 /* INSERCAO - TABELA ENDERECO */
 
 INSERT INTO ENDERECO(tipo ,lougradoro_nome ,numero ,bairro ,municipio ,estados_uf ,complemento , cep )
-VALUES('Rua',' Lírio dos Vales',3,'São Lucas', 'Vitória','ES','Fundos','2900000')
+VALUES('Rua',' Lírio dos Vales',3,'São Lucas', 'Vitória','ES','Fundos','2900000'),
 ('Avenida','Lima Silva',124,'Vista Linda','Vila Velha' ,'ES','Apt 104','2900300'),
 ('Avenida','Avenida Aparecida',154,'São João', 'Vila Velha','ES','Apt 34','2900300'),
 ('Rua','Constante Sodré ',25,'Santa Lúcia', 'Vitória','ES','Apt 230','2900000'),
@@ -241,7 +241,7 @@ VALUES('idA', 'Maria', 'da Silva', '3222-3531',1),
 /* INSERCAO - TABELA CATEGORIA */
 
 INSERT INTO CATEGORIA(id, tipo)
-VALUES('cA','tipoA')
+VALUES('cA','tipoA'),
 ('cB','tipoB'),
 ('cC','tipoC'),
 ('cD','tipoD'),
