@@ -108,8 +108,6 @@ A prototipação foi feita utilizando a ferramenta do balsamiq cloud. Essa proto
 ![Modelo lógico](/images/Modelo%20Lógico.png "Modelo Lógico")
 
 ### 7	MODELO FÍSICO
-
-#### 7.1 CRIAÇÃO (CREATE)
 ~~~SQL
 CREATE TABLE FUNCIONARIO (
     id VARCHAR(3) PRIMARY KEY,
@@ -234,7 +232,8 @@ ALTER TABLE SABOR ADD CONSTRAINT SABORES__fk_PRODUTOS_id
     FOREIGN KEY (fk_PRODUTOS_id)
     REFERENCES PRODUTO (id);
 ~~~
-#### 7.2 INSERÇÃO (INSERT)
+
+### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS
 ~~~SQL
 /* INSERCAO - TABELA FUNCIONARIO */
 
@@ -379,7 +378,7 @@ VALUES('idP1', 1, 3, 4, 'sabor1', ''),
 ('idP1', 5, 3, 1, 'sabor1', ''),
 ('idP1', 1, 3, 1, 'sabor1', '');
 ~~~
-#### 7.3 EXCLUSÃO (DROP)
+#### EXCLUSÃO (DROP)
 ~~~SQL
 DROP TABLE IF EXISTS VENDA_PRODUTO;
 
@@ -403,8 +402,6 @@ DROP TABLE IF EXISTS PEDIDO_ESTADO;
 
 DROP TABLE IF EXISTS FORMA_DE_PAGAMENTO;
 ~~~
-
-### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
         a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
         (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
         b) Criar um novo banco de dados para testar a restauracao 
