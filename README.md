@@ -49,8 +49,8 @@ A prototipação foi feita utilizando a ferramenta do balsamiq cloud. Essa proto
 ![Modelo Conceitual](/images/Modelo%20Conceitual%20v2.png "Modelo Conceitual")
 
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
+    [Grupo01]: [Renato Peres, Eduardo Alves e Thiago Correa]
+    [Grupo02]: [Matheus de Souza, Rodrigo Raider e Thaís de Souza]
 
 #### 5.2 Descrição dos dados 
     CATEGORIA: Indica os tipos aos quais um produto pertence (Doce, salgado, frio e etc..)
