@@ -393,7 +393,7 @@ VALUES('idP1', 1, 3, 4, 'sabor1', ''),
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
-#### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)
+#### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE
 ```SQL
 -- OBTER SABORES DE UM PRODUTO [SABOR]
 SELECT s.sabor AS "sabores" FROM SABOR AS s
@@ -425,9 +425,57 @@ WHERE id IN (
     b) Criar no mínimo 3 consultas com operadores aritméticos 
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
 
-#### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
-    a) Criar outras 5 consultas que envolvam like ou ilike
-    b) Criar uma consulta para cada tipo de função data apresentada.
+#### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS<br>
+```SQL
+::CURDATE::
+-- OBTEM HÁ QUANTO TEMPO A VENDA FOI REGISTRADA
+SELECT id, data_registro AS "Data de registro", CURRENT_DATE-(data_registro) AS "Registrado há:", total FROM VENDA
+WHERE CURRENT_DATE-(data_registro) >= 2207
+
+-- OBTEM A DIFERENÇA ENTRE O HORÁRIO ATUAL E O HORÁRIO DA ENTREGA
+SELECT id, data_registro AS "Data de registro",
+TO_CHAR(
+    TO_TIMESTAMP((CURRENT_TIME(0)-(hora_entrega))::text, 'HH24:MI:SS')
+    , 'HH24:MI:SS'
+)
+AS "Tempo para a entrega", total FROM VENDA
+
+-- OBTEM A DIFERENÇA ENTRE O HORÁRIO ATUAL E O HORÁRIO DA ENTREGA
+SELECT id, data_registro AS "Data de registro",
+TO_CHAR(
+    NOW()-TO_TIMESTAMP(
+        hora_entrega::TEXT,
+        'HH24:MI:SS'
+        ),
+    'HH24:MI:SS'
+    )
+AS "Tempo para a entrega", total FROM VENDA
+ORDER BY "Tempo para a entrega"
+
+::AGE()::
+-- OBTEM A DIFERENÇA DE TEMPO ENTRE REGISTRO E ENTREGA
+SELECT id, data_registro AS "Data de registro", AGE(data_registro, data_entrega) AS "Dierença de tempo entre registro e entrega"
+FROM VENDA
+ORDER BY "Data de registro"
+
+::DATE_PART()::
+-- OBTEM A DIA E MES DA ENTREGA
+SELECT id, data_registro AS "Data de registro", CONCAT(
+    TO_CHAR(DATE_PART('DAY', data_entrega)::INTEGER, 'FM00'),
+    '/',
+    TO_CHAR(DATE_PART('MONTH', data_entrega)::INTEGER, 'FM00')
+) AS "Dia/mês da entrega"
+FROM VENDA
+ORDER BY "Data de registro"
+
+::EXTRACT()::
+SELECT id, data_registro, data_registro AS "Data de registro", CONCAT(
+    TO_CHAR(EXTRACT('day' FROM data_registro), 'FM00'),
+    '/',
+    TO_CHAR(EXTRACT('month' FROM data_registro), 'FM00')
+) AS "Dia/mês da entrega"
+FROM VENDA
+```
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
     a) Criar minimo 3 de exclusão
