@@ -20,7 +20,6 @@ Rubens Jr: junior.correa2001@gmail.com<br>
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 A prototipação foi feita utilizando a ferramenta do balsamiq cloud. Essa prototipação tem como objetivo dar uma ideia de como o projeto pode ser antes de sua realização. <br>
 
-![Balsamiq.clound](https://github.com/RubensJr21/FCS/blob/master/balsamiq.png?raw=true "Title")
 [![Protótipo FCS (Food Control System)](/images/Tela_Principal_Prototipo_FCS.png?raw=true "Arquivo PDF do Protótipo Balsamiq feito para Doces Sonhos")](/arquivos/FCS%20-%20Food%20Control%20System.pdf)
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 > 
