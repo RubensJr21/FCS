@@ -6,12 +6,9 @@ Trabalho desenvolvido durante a disciplina de BD1
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
 Graziene Martins: grazienemartins@yahoo.com.br<br>
-Lorhan de Souza: lorhan.s160@gmail.com<br>
 Rubens Jr: junior.correa2001@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
-Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
-<br>e motivação da escolha realizada. <br>
 
 > Em meio à pandemia uma mulher precisou arrumar uma forma para ganhar dinheiro já que não estava trabalhando, foi aí então que surgiu a Doces sonhos, mas como qualquer empresa no ramo de vendas ela necessitou de ter um controle sobre o que era vendido, para saber o faturamento e uma estimativa de produção. Seu filho fez em uma planilha algo que a ajudou bastante um tempo, porém o problema veio quando ela criou novos produtos que não está possível adicionar, pois ele usava uma forma estática o VBA (Visual Basic Advanced) o que está por trás das macros e funções do excel.
 
@@ -26,20 +23,9 @@ A prototipação foi feita utilizando a ferramenta do balsamiq cloud. Essa proto
 ![Balsamiq.clound](https://github.com/RubensJr21/FCS/blob/master/balsamiq.png?raw=true "Title")
 [![Protótipo FCS (Food Control System)](/images/Tela_Principal_Prototipo_FCS.png?raw=true "Arquivo PDF do Protótipo Balsamiq feito para Doces Sonhos")](/arquivos/FCS%20-%20Food%20Control%20System.pdf)
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
-    
-> A Empresa DevCom precisa inicialmente dos seguintes relatórios:
-* Relatório que mostre o nome de cada supervisor(a) e a quantidade de empregados supervisionados.
-* Relatório relativo aos os supervisores e supervisionados. O resultado deve conter o nome do supervisor e nome do supervisionado além da quantidade total de horas que cada supervisionado tem alocada aos projetos existentes na empresa.
-* Relatorio que mostre para cada linha obtida o nome do departamento, o valor individual de cada salario existente no  departamento e a média geral de salarios dentre todos os empregados. Os resultados devem ser apresentados ordenados por departamento.
-* Relatório que mostre as informações relacionadas a todos empregados de empresa (sem excluir ninguém). As linhas resultantes devem conter informações sobre: rg, nome, salario do empregado, data de início do salario atual, nomes dos projetos que participa, quantidade de horas e localização nos referidos projetos, numero e nome dos departamentos aos quais está alocado, informações do historico de salário como inicio, fim, e valores de salarios antigos que foram inclusos na referida tabela (caso possuam informações na mesma), além de todas informações relativas aos dependentes. 
->> ##### Observações: <br> a) perceba que este relatório pode conter linhas com alguns dados repetidos (mas não todos). <br>  b) para os empregados que não possuirem alguma destas informações o valor no registro deve aparecer sem informação/nulo. 
-* Relatório que obtenha a frequencia absoluta e frequencia relativa da quantidade de cpfs únicos no relatório anterior. Apresente os resultados ordenados de forma decrescente pela frequencia relativa.
+> 
  
 #### 4.3 TABELA DE DADOS DO SISTEMA:
-    a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas/registros de dados.
-    b) Esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
     
 ![Exemplo de Tabela de dados da Empresa Devcom](https://github.com/discipbd1/trab01/blob/master/arquivos/TabelaEmpresaDevCom_sample.xlsx?raw=true "Tabela - Empresa Devcom")
     
@@ -380,12 +366,6 @@ VALUES('idP1', 1, 3, 4, 'sabor1', ''),
 ~~~
 >a) link do arquivo sql referente ao Backup: [Abrir Backup_BD_FCS.sql](/arquivos/Backup_BD_FCS.sql)<br>
 >b) link do arquivo de Backup do PgAdmin: [Abrir Backup_BD_FCS.backup](/arquivos/Backup_BD_FCS.backup)<br>
-
->a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico<br>
->(Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)<br>
->b) Criar um novo banco de dados para testar a restauracao <br>
->(em caso de falha na restauração o grupo não pontuará neste quesito)<br>
->c) formato .SQL<br>
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
