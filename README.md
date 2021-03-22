@@ -427,7 +427,7 @@ TO_CHAR(
         'HH24:MI:SS'
         ),
     'HH24:MI:SS'
-    )
+)
 AS "Tempo para a entrega", total FROM VENDA
 ORDER BY "Tempo para a entrega"
 
