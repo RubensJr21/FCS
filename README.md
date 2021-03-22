@@ -393,7 +393,33 @@ VALUES('idP1', 1, 3, 4, 'sabor1', ''),
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
-#### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
+#### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)
+```SQL
+-- OBTER SABORES DE UM PRODUTO [SABOR]
+SELECT s.sabor AS "sabores" FROM SABOR AS s
+INNER JOIN PRODUTO AS p
+ON (p.id = s.fk_PRODUTOS_id)
+WHERE p.id = 'idP1'
+
+-- OBTER DE UM DETERMINADO SABOR [SABOR]
+SELECT * FROM SABOR
+WHERE sabor IN ('sabor1', 'sabor2')
+
+-- OBTER VENDAS COM O TOTAL MAIOR QUE (VALOR) [VENDA]
+SELECT * FROM VENDA
+WHERE total > 9.5
+
+-- OBTER VENDAS COM HORÁRIO DE ENTREGA MAIOR QUE A MÉDIA [VENDA]
+SELECT * FROM VENDA
+WHERE id IN (
+        SELECT id
+        FROM VENDA
+        WHERE hora_entrega > (
+            SELECT AVG(hora_entrega)
+            FROM VENDA
+        )
+    )
+```
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     b) Criar no mínimo 3 consultas com operadores aritméticos 
