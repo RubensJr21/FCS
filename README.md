@@ -518,7 +518,26 @@ ORDER BY nome
     a) Criar minimo 2 envolvendo algum tipo de junção
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
-    a) Criar minimo 1 de cada tipo
+```SQL
+LEFT:
+PRODUTOS VENDIDOS EM UMA VENDA [VENDA_PRODUTO, PRODUTO]
+SELECT p.nome FROM PRODUTO AS p LEFT OUTER JOIN VENDA_PRODUTO AS v
+ON (v.FK_PRODUTOS_id = p.id)
+
+CLIENTES QUE JÁ COMPRARAM [CLIENTE, VENDA]
+SELECT c.nome, c.sobrenome, c.telefone FROM CLIENTE AS c LEFT OUTER JOIN VENDA AS v
+ON (c.id = v.FK_CLIENTES_id)
+
+RIGHT:
+PRODUTOS QUE JÁ FORAM VENDIDOS PELO MENOS EM UMA VENDA[VENDA_PRODUTO, PRODUTO]
+SELECT p.nome FROM VENDA_PRODUTO AS v RIGHT OUTER JOIN PRODUTO AS p
+ON (v.FK_PRODUTOS_id = p.id)
+
+FULL:
+ENDEREÇO DOS CLIENTES [CLIENTE, ENDERECO]
+SELECT * FROM CLIENTE AS c FULL OUTER JOIN ENDERECO AS e
+ON (c.FK_ENDERECOS_ID = e.id)
+```
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
