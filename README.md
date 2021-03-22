@@ -427,7 +427,7 @@ WHERE id IN (
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS<br>
 ```SQL
-::CURDATE::
+CURDATE:
 -- OBTEM HÁ QUANTO TEMPO A VENDA FOI REGISTRADA
 SELECT id, data_registro AS "Data de registro", CURRENT_DATE-(data_registro) AS "Registrado há:", total FROM VENDA
 WHERE CURRENT_DATE-(data_registro) >= 2207
@@ -452,13 +452,13 @@ TO_CHAR(
 AS "Tempo para a entrega", total FROM VENDA
 ORDER BY "Tempo para a entrega"
 
-::AGE()::
+AGE():
 -- OBTEM A DIFERENÇA DE TEMPO ENTRE REGISTRO E ENTREGA
 SELECT id, data_registro AS "Data de registro", AGE(data_registro, data_entrega) AS "Dierença de tempo entre registro e entrega"
 FROM VENDA
 ORDER BY "Data de registro"
 
-::DATE_PART()::
+DATE_PART():
 -- OBTEM A DIA E MES DA ENTREGA
 SELECT id, data_registro AS "Data de registro", CONCAT(
     TO_CHAR(DATE_PART('DAY', data_entrega)::INTEGER, 'FM00'),
@@ -468,7 +468,7 @@ SELECT id, data_registro AS "Data de registro", CONCAT(
 FROM VENDA
 ORDER BY "Data de registro"
 
-::EXTRACT()::
+EXTRACT():
 SELECT id, data_registro, data_registro AS "Data de registro", CONCAT(
     TO_CHAR(EXTRACT('day' FROM data_registro), 'FM00'),
     '/',
@@ -482,8 +482,18 @@ FROM VENDA
     b) Criar minimo 3 de atualização
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
-    a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
-    b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
+```SQL
+INNER JOIN:
+-- VENDA QUE TAL CLIENTE COMPROU [VENDA, CLIENTE]
+SELECT v.id AS "id venda", CONCAT(c.nome, ' ', c.sobrenome) AS "nome", v.data_entrega AS "data de entrega", v.total FROM VENDA AS v
+INNER JOIN CLIENTE AS c
+ON (v.fk_CLIENTES_id = c.id)
+
+-- MOSTRAR SABORES DOS PRODUTOS [PRODUTOS, SABOR]
+SELECT p.nome, s.sabor, p.active AS "ativo" FROM PRODUTO AS p
+INNER JOIN SABOR AS s
+ON (s.fk_PRODUTOS_id = p.id)
+```
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
     a) Criar minimo 2 envolvendo algum tipo de junção
