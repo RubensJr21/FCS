@@ -520,21 +520,21 @@ ORDER BY nome
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
 ```SQL
 LEFT:
-PRODUTOS VENDIDOS EM UMA VENDA [VENDA_PRODUTO, PRODUTO]
+-- PRODUTOS VENDIDOS EM UMA VENDA [VENDA_PRODUTO, PRODUTO]
 SELECT p.nome FROM PRODUTO AS p LEFT OUTER JOIN VENDA_PRODUTO AS v
 ON (v.FK_PRODUTOS_id = p.id)
 
-CLIENTES QUE JÁ COMPRARAM [CLIENTE, VENDA]
+-- CLIENTES QUE JÁ COMPRARAM [CLIENTE, VENDA]
 SELECT c.nome, c.sobrenome, c.telefone FROM CLIENTE AS c LEFT OUTER JOIN VENDA AS v
 ON (c.id = v.FK_CLIENTES_id)
 
 RIGHT:
-PRODUTOS QUE JÁ FORAM VENDIDOS PELO MENOS EM UMA VENDA[VENDA_PRODUTO, PRODUTO]
+-- PRODUTOS QUE JÁ FORAM VENDIDOS PELO MENOS EM UMA VENDA[VENDA_PRODUTO, PRODUTO]
 SELECT p.nome FROM VENDA_PRODUTO AS v RIGHT OUTER JOIN PRODUTO AS p
 ON (v.FK_PRODUTOS_id = p.id)
 
 FULL:
-ENDEREÇO DOS CLIENTES [CLIENTE, ENDERECO]
+-- ENDEREÇO DOS CLIENTES [CLIENTE, ENDERECO]
 SELECT * FROM CLIENTE AS c FULL OUTER JOIN ENDERECO AS e
 ON (c.FK_ENDERECOS_ID = e.id)
 ```
@@ -544,8 +544,46 @@ ON (c.FK_ENDERECOS_ID = e.id)
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
-     a) Criar minimo 1 envolvendo GROUP BY
-     b) Criar minimo 1 envolvendo algum tipo de junção
+```SQL
+-- FILTRANDO VALORES MAIORES QUE A MÉDIA:
+SELECT v.id AS "id venda", CONCAT(c.nome, ' ', c.sobrenome) AS "nome", v.data_entrega AS "data de entrega", v.total FROM VENDA AS v
+INNER JOIN CLIENTE AS c
+ON (v.fk_CLIENTES_id = c.id)
+WHERE v.total > (
+    SELECT AVG(total) FROM VENDA
+)
+
+-- EXCLUINDO UM SABOR [VENDA_PRODUTO, SABOR]:
+SELECT * FROM VENDA_PRODUTO
+WHERE sabor IN (
+    SELECT DISTINCT S.sabor
+    FROM SABOR as S
+    WHERE sabor <> 'sabor2'
+)
+
+-- EXCLUINDO UM SABOR [VENDA]:
+SELECT * FROM VENDA
+WHERE total > (
+    SELECT AVG(total)
+    FROM VENDA
+)
+
+-- PRODUTOS COM O PREÇO À CIMA DA MÉDIA [PRODUTO]:
+SELECT nome, valor FROM PRODUTO
+WHERE valor > (
+    SELECT AVG(valor) FROM PRODUTO
+)
+
+-- BUSCANDO TIPO DE LOUGRADORO COM A MAIOR NUMERO DE OCORRÊNCIAS: HELP(https://stackoverflow.com/questions/38136854/how-to-use-multiple-with-statements-in-one-postgresql-query):
+SELECT * FROM ENDERECO
+WHERE tipo = (
+    WITH s AS (SELECT tipo, COUNT(tipo) as "c" FROM ENDERECO GROUP BY tipo)
+    SELECT tipo FROM s
+    WHERE c = (
+        SELECT MAX(c) FROM (SELECT tipo, COUNT(tipo) as "c" FROM ENDERECO GROUP BY tipo) AS f
+    )
+)
+```
 
 ># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
 
