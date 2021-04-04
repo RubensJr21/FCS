@@ -410,6 +410,28 @@ WHERE id IN (
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS<br>
 ```SQL
+======================= LIKE =======================
+
+-- Complementos que tem Apt
+SELECT * FROM ENDERECO WHERE complemento LIKE '%Apt%'
+
+-- Sobrenomes que tem tem S
+SELECT * FROM CLIENTE WHERE sobrenome LIKE '%S%'
+
+-- Complementos que sejam apt ou Apt
+SELECT * FROM ENDERECO WHERE complemento ILIKE '%apt%'
+
+-- Sobrenomes que tem a letra s
+SELECT * FROM CLIENTE WHERE sobrenome ILIKE '%s%'
+
+-- Sobrenomes que começem com S
+SELECT * FROM CLIENTE WHERE sobrenome LIKE 'S%'
+
+-- Sobrenomes que começem com A
+SELECT * FROM CLIENTE WHERE sobrenome LIKE 'A%'
+
+======================= DATAS =======================
+
 CURDATE:
 -- OBTEM HÁ QUANTO TEMPO A VENDA FOI REGISTRADA
 SELECT id, data_registro AS "Data de registro", CURRENT_DATE-(data_registro) AS "Registrado há:", total FROM VENDA
