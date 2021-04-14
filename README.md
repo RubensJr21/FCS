@@ -29,10 +29,9 @@ A prototipação foi feita utilizando a ferramenta do balsamiq cloud. Essa proto
 > Em quais dias (da semana) as pessoas mais pedem (data de entrega)?<br>
  
 #### 4.3 TABELA DE DADOS DO SISTEMA:
-    
-![Exemplo de Tabela de dados da Empresa Devcom](https://github.com/discipbd1/trab01/blob/master/arquivos/TabelaEmpresaDevCom_sample.xlsx?raw=true "Tabela - Empresa Devcom")
-    
-    
+
+[![Tabela de dados do Sistema FCS (Item 4.3))](/images/Tabela%20de%20dados%20do%20Sistema%20FCS%20(Item%204.3).png?raw=true "Tabela de dados do Sistema FCS")](https://docs.google.com/spreadsheets/d/1mhWMYbonXYFp18-qP3RNgy6_Lhyf2mhzLwqRyEUuv00/edit?usp=sharing)
+
 ### 5.MODELO CONCEITUAL<br>
         
 ![Modelo Conceitual](/images/Modelo%20Conceitual%20v2.png "Modelo Conceitual")
