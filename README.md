@@ -1000,7 +1000,7 @@ WHERE tipo = (
 #### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
 #### OBS: Esta é uma atividade de grande relevância no contexto do trabalho. Mantenha o foco nos 5 principais relatórios/resultados visando obter o melhor resultado possível.
 
-#### Relatório 4
+#### Relatório 1
 ##### SQL e tabela resultante
 [![Relatório 4 - SQL e tabela resultante](/images/Relat%C3%B3rio%201%20-%20SQL%20e%20tabela.png?raw=true "Relatório 1 - Grafico.png")](https://colab.research.google.com/drive/1lrsPbcdy-wc4MUW8LwiNkffYOUNfv02o#scrollTo=SPEqujbqj4bC)
 
