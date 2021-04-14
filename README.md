@@ -754,14 +754,18 @@ VALUES
 SELECT s.sabor AS "sabores" FROM SABOR AS s
 INNER JOIN PRODUTO AS p
 ON (p.id = s.fk_PRODUTOS_id)
-WHERE p.id = 'idP1'
+WHERE p.id = 'sonh'
 
 -- OBTER DE UM DETERMINADO SABOR [SABOR]
-SELECT * FROM SABOR
-WHERE sabor IN ('sabor1', 'sabor2')
+SELECT p.nome, s.sabor FROM SABOR as s
+INNER JOIN PRODUTO p
+ON s.fk_produtos_id = p.id
+WHERE sabor IN ('tradicional', 'chocolate')
 
 -- OBTER VENDAS COM O TOTAL MAIOR QUE (VALOR) [VENDA]
-SELECT * FROM VENDA
+SELECT v.id, c.nome, v.data_entrega as "data de entrega", v.hora_entrega as "hora da entrega", v.fk_forma_de_pagamento_tipo as "tipo de pagamento", v.valor_pago as "valor pago", v.total, obs FROM VENDA as v
+INNER JOIN CLIENTE c
+ON v.fk_clientes_id = c.id
 WHERE total > 9.5
 
 -- OBTER VENDAS COM HORÁRIO DE ENTREGA MAIOR QUE A MÉDIA [VENDA]
