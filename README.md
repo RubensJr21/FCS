@@ -865,6 +865,7 @@ FROM VENDA
     b) Criar minimo 3 de atualização
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
+> link com as execuções: [9.6	CONSULTAS COM INNER JOIN E ORDER BY - Google Colab](https://colab.research.google.com/drive/1rhLlMu7mWYlWDhWySO_g9ln-je3qjnFO#scrollTo=CZ8HmPa2pUx-)
 ```SQL
 INNER JOIN:
 -- VENDA QUE TAL CLIENTE COMPROU [VENDA, CLIENTE]
@@ -882,7 +883,7 @@ ORDER BY:
 SELECT * FROM VENDA
 ORDER BY VENDA.total
 
--- ORDENAR VENDAS PELA DATA DE ENTREGA (ASC) [VENDA]
+-- ORDENAR VENDAS PELA DATA DE ENTREGA (DESC) [VENDA]
 SELECT * FROM VENDA
 ORDER BY VENDA.data_entrega DESC
 
