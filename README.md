@@ -796,12 +796,29 @@ WHERE id IN (
    ![9.3_a4.png](/9.3_a4.png?raw=true "9.3 - AND, OR e NOT")
     
 ####   Consulta 5 
-   ![9.3_a5.png](/9.3_a5.png?raw=true "9.3 - AND, OR e NOT")
+   ![9.3_a5.PNG](/9.3_a5.PNG?raw=true "9.3 - AND, OR e NOT")
     
-   b) Criar no mínimo 3 consultas com operadores aritméticos
+#### b) Criar no mínimo 3 consultas com operadores aritméticos
+####  Consulta 1     
+   ![9.3_b1.PNG](/9.3_b1.PNG?raw=true "9.3 - operadores aritméticos")
+        
+#### Consulta 2
+   ![9.3_b2.PNG](/9.3_b2.PNG?raw=true "9.3 - operadores aritméticos")
     
+#### Consulta 3 
+   ![9.3_b3.PNG](/9.3_b3.PNG?raw=true "9.3 - operadores aritméticos")
+
+#### c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
+
+####  Consulta 1     
+   ![9.3_c1.PNG](/9.3_c1.PNG?raw=true "9.3 - operadores aritméticos")
+        
+#### Consulta 2
+   ![9.3_c2.PNG](/9.3_c2.PNG?raw=true "9.3 - operadores aritméticos")
     
-   c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
+#### Consulta 3 
+   ![9.3_c3.PNG](/9.3_c3.PNG?raw=true "9.3 - operadores aritméticos")
+
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS<br>
 > link com as execuções: [9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS - Google Colab](https://colab.research.google.com/drive/1rhLlMu7mWYlWDhWySO_g9ln-je3qjnFO#scrollTo=UPzpc-yupT2e)
@@ -1000,25 +1017,18 @@ WHERE tipo = (
 #### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
 #### OBS: Esta é uma atividade de grande relevância no contexto do trabalho. Mantenha o foco nos 5 principais relatórios/resultados visando obter o melhor resultado possível.
 
-#### Relatório 1
-##### SQL e tabela resultante
-[![Relatório 4 - SQL e tabela resultante](/images/Relat%C3%B3rio%201%20-%20SQL%20e%20tabela.png?raw=true "Relatório 1 - Grafico.png")](https://colab.research.google.com/drive/1lrsPbcdy-wc4MUW8LwiNkffYOUNfv02o#scrollTo=SPEqujbqj4bC)
-
-##### Gráfico
-[![Relatório 4 - Gráfico](/images/Relat%C3%B3rio%201%20-%20Grafico.png?raw=true "Relatório 1 - Grafico.png")](https://colab.research.google.com/drive/1lrsPbcdy-wc4MUW8LwiNkffYOUNfv02o#scrollTo=ktTcw3aRj4bE)
-
-#### Relatório 3 
-##### SQL e tabela resultante
+### Relatório 3 
+#### SQL e tabela resultante
 ![Relatorio3](/Relatorio3_SQL_e_tabela.PNG "SQL e tabela resultante")
 
-##### Gráfico
+#### Gráfico
 ![Relatorio3](/Relatorio_3_grafico.PNG "Gráfico Relatório 3")
 
-#### Relatório 4
-##### SQL e tabela resultante
+### Relatório 4
+#### SQL e tabela resultante
 ![Relatorio4](/Relatorio4_SQL_e_tabela.PNG "SQL e tabela resultante")
 
-##### Gráfico
+#### Gráfico
 ![Relatorio4](/Relatorio4_grafico.PNG "Gráfico Relatório 4")
 
 
