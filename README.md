@@ -983,8 +983,19 @@ WHERE tipo = (
 #### OBS: Esta é uma atividade de grande relevância no contexto do trabalho. Mantenha o foco nos 5 principais relatórios/resultados visando obter o melhor resultado possível.
 
 ### Relatório 3 
+#### SQL e tabela resultante
 ![Relatorio3](/Relatorio3_SQL_e_tabela.PNG "SQL e tabela resultante")
-    
+
+#### Gráfico
+![Relatorio3](/Relatorio_3_grafico.PNG "Gráfico Relatório 3")
+
+### Relatório 4
+#### SQL e tabela resultante
+![Relatorio4](/Relatorio4_SQL_e_tabela.PNG "SQL e tabela resultante")
+
+#### Gráfico
+![Relatorio4](/Relatorio_4_grafico.PNG "Gráfico Relatório 4")
+
 
 ### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
