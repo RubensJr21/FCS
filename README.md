@@ -932,6 +932,7 @@ ON (c.FK_ENDERECOS_ID = e.id)
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
+> link com as execuções: [9.10	SUBCONSULTAS - Google Colab](https://colab.research.google.com/drive/1rhLlMu7mWYlWDhWySO_g9ln-je3qjnFO#scrollTo=bhMuG-CNpVfl)
 ```SQL
 -- FILTRANDO VALORES MAIORES QUE A MÉDIA:
 SELECT v.id AS "id venda", CONCAT(c.nome, ' ', c.sobrenome) AS "nome", v.data_entrega AS "data de entrega", v.total FROM VENDA AS v
@@ -946,10 +947,10 @@ SELECT * FROM VENDA_PRODUTO
 WHERE sabor IN (
     SELECT DISTINCT S.sabor
     FROM SABOR as S
-    WHERE sabor <> 'sabor2'
+    WHERE sabor <> 'tradicional'
 )
 
--- EXCLUINDO UM SABOR [VENDA]:
+-- VENDAS COM O TOTAL À CIMA DA MÉDIA [VENDA]:
 SELECT * FROM VENDA
 WHERE total > (
     SELECT AVG(total)
@@ -962,7 +963,7 @@ WHERE valor > (
     SELECT AVG(valor) FROM PRODUTO
 )
 
--- BUSCANDO TIPO DE LOUGRADORO COM A MAIOR NUMERO DE OCORRÊNCIAS: HELP(https://stackoverflow.com/questions/38136854/how-to-use-multiple-with-statements-in-one-postgresql-query):
+-- BUSCANDO TIPO DE LOUGRADORO COM A MAIOR NUMERO DE OCORRÊNCIAS:
 SELECT * FROM ENDERECO
 WHERE tipo = (
     WITH s AS (SELECT tipo, COUNT(tipo) as "c" FROM ENDERECO GROUP BY tipo)
