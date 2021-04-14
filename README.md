@@ -1000,18 +1000,25 @@ WHERE tipo = (
 #### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
 #### OBS: Esta é uma atividade de grande relevância no contexto do trabalho. Mantenha o foco nos 5 principais relatórios/resultados visando obter o melhor resultado possível.
 
-### Relatório 3 
-#### SQL e tabela resultante
+#### Relatório 4
+##### SQL e tabela resultante
+[![Relatório 4 - SQL e tabela resultante](/images/Relat%C3%B3rio%201%20-%20SQL%20e%20tabela.png?raw=true "Relatório 1 - Grafico.png")](https://colab.research.google.com/drive/1lrsPbcdy-wc4MUW8LwiNkffYOUNfv02o#scrollTo=SPEqujbqj4bC)
+
+##### Gráfico
+[![Relatório 4 - Gráfico](/images/Relat%C3%B3rio%201%20-%20Grafico.png?raw=true "Relatório 1 - Grafico.png")](https://colab.research.google.com/drive/1lrsPbcdy-wc4MUW8LwiNkffYOUNfv02o#scrollTo=ktTcw3aRj4bE)
+
+#### Relatório 3 
+##### SQL e tabela resultante
 ![Relatorio3](/Relatorio3_SQL_e_tabela.PNG "SQL e tabela resultante")
 
-#### Gráfico
+##### Gráfico
 ![Relatorio3](/Relatorio_3_grafico.PNG "Gráfico Relatório 3")
 
-### Relatório 4
-#### SQL e tabela resultante
+#### Relatório 4
+##### SQL e tabela resultante
 ![Relatorio4](/Relatorio4_SQL_e_tabela.PNG "SQL e tabela resultante")
 
-#### Gráfico
+##### Gráfico
 ![Relatorio4](/Relatorio4_grafico.PNG "Gráfico Relatório 4")
 
 
