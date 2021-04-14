@@ -111,7 +111,7 @@ CREATE TABLE VENDA (
     fk_FUNCIONARIOS_id VARCHAR(3),
     data_registro DATE NOT NULL,
     data_entrega DATE NOT NULL,
-    hora_entrega TIME NOT NULL,
+    hora_entrega TIME,
     fk_FORMA_DE_PAGAMENTO_tipo VARCHAR(20) NOT NULL,
     valor_pago DECIMAL NOT NULL,
     total DECIMAL NOT NULL,
@@ -143,7 +143,7 @@ CREATE TABLE CLIENTE (
 CREATE TABLE ENDERECO (
     id SERIAL PRIMARY KEY,
     tipo VARCHAR(15) NOT NULL,
-    lougradoro_nome VARCHAR(30) NOT NULL,
+    lougradoro_nome VARCHAR(60) NOT NULL,
     numero INTEGER,
     bairro VARCHAR(50) NOT NULL,
     municipio VARCHAR(50) NOT NULL,
@@ -157,7 +157,7 @@ CREATE TABLE VENDA_PRODUTO (
     fk_VENDAS_id INTEGER,
     qtd INTEGER NOT NULL,
     valor DECIMAL NOT NULL,
-    sabor VARCHAR(14),
+    sabor VARCHAR(30),
     obs VARCHAR(150)
 );
 
@@ -178,7 +178,7 @@ CREATE TABLE ESTOQUE (
 CREATE TABLE SABOR (
     id SERIAL PRIMARY KEY,
     fk_PRODUTOS_id VARCHAR(4),
-    sabor VARCHAR(14) NOT NULL
+    sabor VARCHAR(25) NOT NULL
 );
 
 ALTER TABLE VENDA ADD CONSTRAINT VENDAS__fk_CLIENTES_id
