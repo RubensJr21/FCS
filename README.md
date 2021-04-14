@@ -781,26 +781,28 @@ WHERE id IN (
     )
 ```
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
-    a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
-    Consulta 1     
-    [![9.3_a1.png](/9.3_a1.png?raw=true "9.3 - AND, OR e NOT")]
+
+
+#### a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
+####  Consulta 1     
+   ![9.3_a1.png](/9.3_a1.png?raw=true "9.3 - AND, OR e NOT")
         
-    Consulta 2
-    [![9.3_a2.png](/9.3_a2.png?raw=true "9.3 - AND, OR e NOT")]
+#### Consulta 2
+   ![9.3_a2.png](/9.3_a2.png?raw=true "9.3 - AND, OR e NOT")
     
-    Consulta 3 
-    [![9.3_a3.png](/9.3_a3.png?raw=true "9.3 - AND, OR e NOT")]
+#### Consulta 3 
+   ![9.3_a3.png](/9.3_a3.png?raw=true "9.3 - AND, OR e NOT")
     
-    Consulta 4 
-    [![9.3_a4.png](/9.3_a4.png?raw=true "9.3 - AND, OR e NOT")]
+#### Consulta 4 
+   ![9.3_a4.png](/9.3_a4.png?raw=true "9.3 - AND, OR e NOT")
     
-    Consulta 5 
-    [![9.3_a5.png](/9.3_a5.png?raw=true "9.3 - AND, OR e NOT")]
+####   Consulta 5 
+   ![9.3_a5.png](/9.3_a5.png?raw=true "9.3 - AND, OR e NOT")
     
-    b) Criar no mínimo 3 consultas com operadores aritméticos
+   b) Criar no mínimo 3 consultas com operadores aritméticos
     
     
-    c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
+   c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS<br>
 > link com as execuções: [9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS - Google Colab](https://colab.research.google.com/drive/1rhLlMu7mWYlWDhWySO_g9ln-je3qjnFO#scrollTo=UPzpc-yupT2e)
