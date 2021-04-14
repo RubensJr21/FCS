@@ -782,7 +782,20 @@ WHERE id IN (
 ```
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
-    b) Criar no mínimo 3 consultas com operadores aritméticos 
+    Consulta 1 
+    ![9.3a](/9.3_a1.png "9.3.a")
+    Consulta 2
+    ![9.3a](/9.3_a2.png "9.3.a")
+    Consulta 3 
+    ![9.3a](/9.3_a3.png "9.3.a")
+    Consulta 4 
+    ![9.3a](/9.3_a4.png "9.3.a")
+    Consulta 5 
+    ![9.3a](/9.3_a5.png "9.3.a")
+    
+    b) Criar no mínimo 3 consultas com operadores aritméticos
+    
+    
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS<br>
