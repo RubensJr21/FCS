@@ -902,15 +902,19 @@ ORDER BY nome
     a) Criar minimo 2 envolvendo algum tipo de junção
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
+> link com as execuções: [9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN - Google Colab](https://colab.research.google.com/drive/1rhLlMu7mWYlWDhWySO_g9ln-je3qjnFO#scrollTo=hgqNBIVvpVNu)
 ```SQL
 LEFT:
 -- PRODUTOS VENDIDOS EM UMA VENDA [VENDA_PRODUTO, PRODUTO]
 SELECT p.nome FROM PRODUTO AS p LEFT OUTER JOIN VENDA_PRODUTO AS v
 ON (v.FK_PRODUTOS_id = p.id)
+WHERE v.fk_vendas_id = 23
+LIMIT 2
 
 -- CLIENTES QUE JÁ COMPRARAM [CLIENTE, VENDA]
 SELECT c.nome, c.sobrenome, c.telefone FROM CLIENTE AS c LEFT OUTER JOIN VENDA AS v
 ON (c.id = v.FK_CLIENTES_id)
+LIMITE 5
 
 RIGHT:
 -- PRODUTOS QUE JÁ FORAM VENDIDOS PELO MENOS EM UMA VENDA[VENDA_PRODUTO, PRODUTO]
