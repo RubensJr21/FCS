@@ -317,7 +317,6 @@ VALUES
 ('135', 'Érica', 'Rocha Siqueira', '3532-1111',49),
 ('101', 'Luiz Felipe', 'Andrade de Azevedo', '3222-4444',50);
 
--- Rubens: Produtos, categoria, pedido estado e forma de pagamento
 /* INSERCAO - TABELA CATEGORIA */
 
 INSERT INTO CATEGORIA(id, tipo)
