@@ -982,6 +982,8 @@ WHERE tipo = (
 #### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
 #### OBS: Esta é uma atividade de grande relevância no contexto do trabalho. Mantenha o foco nos 5 principais relatórios/resultados visando obter o melhor resultado possível.
 
+### Relatório 3 
+![Relatorio3](/Relatorio3_SQL_e_tabela.PNG "SQL e tabela resultante")
     
 
 ### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
