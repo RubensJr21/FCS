@@ -811,13 +811,13 @@ WHERE id IN (
 #### c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
 
 ####  Consulta 1     
-   ![9.3_c1.PNG](/9.3_c1.PNG?raw=true "9.3 - renomear nomes de campos ou tabelas")
+   ![9.3_c1.PNG](/9.3_c1.PNG?raw=true "9.3 - operadores aritméticos")
         
 #### Consulta 2
-   ![9.3_c2.PNG](/9.3_c2.PNG?raw=true "9.3 - renomear nomes de campos ou tabelas")
+   ![9.3_c2.PNG](/9.3_c2.PNG?raw=true "9.3 - operadores aritméticos")
     
 #### Consulta 3 
-   ![9.3_c3.PNG](/9.3_c3.PNG?raw=true "9.3 - renomear nomes de campos ou tabelas")
+   ![9.3_c3.PNG](/9.3_c3.PNG?raw=true "9.3 - operadores aritméticos")
 
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS<br>
@@ -896,28 +896,9 @@ FROM VENDA
 ```
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
+    a) Criar minimo 3 de exclusão
+    b) Criar minimo 3 de atualização
 
-#### a) Criar minimo 3 de exclusão
-####  Consulta 1     
-   ![9.5_a1.PNG](/9.5_a1.PNG?raw=true "9.5 - exclusão")
-        
-#### Consulta 2
-   ![9.5_a2.PNG](/9.5_a2.PNG?raw=true "9.5 - exclusãos")
-    
-#### Consulta 3 
-   ![9.5_a3.PNG](/9.5_a3.PNG?raw=true "9.5 - exclusão")
-   
-#### b) Criar minimo 3 de atualização
-
-####  Consulta 1     
-   ![9.5_b1.PNG](/9.5_b1.PNG?raw=true "9.5 - atualização")
-        
-#### Consulta 2
-   ![9.5_b2.PNG](/9.5_b2.PNG?raw=true "9.5 - atualização")
-    
-#### Consulta 3 
-   ![9.5_b3.PNG](/9.5_b3.PNG?raw=true "9.5 - atualização")
-   
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
 > link com as execuções: [9.6	CONSULTAS COM INNER JOIN E ORDER BY - Google Colab](https://colab.research.google.com/drive/1rhLlMu7mWYlWDhWySO_g9ln-je3qjnFO#scrollTo=CZ8HmPa2pUx-)
 ```SQL
@@ -953,26 +934,7 @@ ORDER BY nome
 ```
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
-
-#### a) Criar minimo 2 envolvendo algum tipo de junção
-####  Consulta 1     
-   ![9.7_a1.PNG](/9.7_a1.PNG?raw=true "9.7 - group by, funções de agrupamento")
-        
-#### Consulta 2
-   ![9.7_a2.PNG](/9.7_a2.PNG?raw=true "9.7 - group by, funções de agrupamento")
-    
-#### Consulta 3 
-   ![9.7_a3.PNG](/9.7_a3.PNG?raw=true "9.7 - group by, funções de agrupamento")
-    
-#### Consulta 4     
-  ![9.7_a4.PNG](/9.7_a4.PNG?raw=true "9.7 - group by, funções de agrupamento")
-        
-#### Consulta 5
-   ![9.7_a5.PNG](/9.7_a5.PNG?raw=true "9.7 - group by, funções de agrupamento")
-    
-#### Consulta 6
-   ![9.7_a6.PNG](/9.7_a6.PNG?raw=true "9.7 - group by, funções de agrupamento")
-   
+    a) Criar minimo 2 envolvendo algum tipo de junção
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
 > link com as execuções: [9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN - Google Colab](https://colab.research.google.com/drive/1rhLlMu7mWYlWDhWySO_g9ln-je3qjnFO#scrollTo=hgqNBIVvpVNu)
@@ -1001,28 +963,9 @@ ON (c.FK_ENDERECOS_ID = e.id)
 ```
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
-#### a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
+        a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
+        b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 
-####  Consulta 1     
-   ![9.9_a.PNG](/9.9_a.PNG?raw=true "9.9 - self join e view")
-   
-####   b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
-
-####  Consulta 1     
-   ![9.9_2.PNG](/9.9_2.PNG?raw=true "9.9 - self join e view")
-
-####  Consulta 2     
-   ![9.9_3.PNG](/9.9_3.PNG?raw=true "9.9 - self join e view")
- 
-####  Consulta 3     
-   ![9.9_4.PNG](/9.9_4.PNG?raw=true "9.9 - self join e view")
-   
-####  Consulta 4    
-   ![9.9_5.PNG](/9.9_5.PNG?raw=true "9.9 - self join e view")
- 
- ####  Consulta 5     
-   ![9.9_6.PNG](/9.9_6.PNG?raw=true "9.9 - self join e view")
-   
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
 > link com as execuções: [9.10	SUBCONSULTAS - Google Colab](https://colab.research.google.com/drive/1rhLlMu7mWYlWDhWySO_g9ln-je3qjnFO#scrollTo=bhMuG-CNpVfl)
 ```SQL
@@ -1074,20 +1017,40 @@ WHERE tipo = (
 #### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
 #### OBS: Esta é uma atividade de grande relevância no contexto do trabalho. Mantenha o foco nos 5 principais relatórios/resultados visando obter o melhor resultado possível.
 
-### Relatório 3 
-#### SQL e tabela resultante
+#### Relatório 1
+##### SQL e tabela resultante
+[![Relatório 1 - SQL e tabela resultante](/images/Relat%C3%B3rio%201%20-%20SQL%20e%20tabela.png?raw=true "Relatório 1 - SQL e tabela resultante.png")](https://colab.research.google.com/drive/1lrsPbcdy-wc4MUW8LwiNkffYOUNfv02o#scrollTo=SPEqujbqj4bC)
+
+##### Gráfico
+[![Relatório 1 - Gráfico](/images/Relat%C3%B3rio%201%20-%20Grafico.png?raw=true "Relatório 1 - Grafico.png")](https://colab.research.google.com/drive/1lrsPbcdy-wc4MUW8LwiNkffYOUNfv02o#scrollTo=ktTcw3aRj4bE)
+
+#### Relatório 2
+##### SQL e tabela resultante
+[![Relatório 2 - SQL e tabela resultante](/images/Relat%C3%B3rio%202%20-%20SQL%20e%20tabela.png?raw=true "Relatório 2 - SQL e tabela resultante.png")](https://colab.research.google.com/drive/1lrsPbcdy-wc4MUW8LwiNkffYOUNfv02o#scrollTo=Xfmq9i7-j4bE)
+
+##### Gráfico
+[![Relatório 2 - Gráfico](/images/Relat%C3%B3rio%202%20-%20Grafico.png?raw=true "Relatório 2 - Grafico.png")](https://colab.research.google.com/drive/1lrsPbcdy-wc4MUW8LwiNkffYOUNfv02o#scrollTo=f70192yoj4bF)
+
+#### Relatório 3 
+##### SQL e tabela resultante
 ![Relatorio3](/Relatorio3_SQL_e_tabela.PNG "SQL e tabela resultante")
 
-#### Gráfico
+##### Gráfico
 ![Relatorio3](/Relatorio_3_grafico.PNG "Gráfico Relatório 3")
 
-### Relatório 4
-#### SQL e tabela resultante
+#### Relatório 4
+##### SQL e tabela resultante
 ![Relatorio4](/Relatorio4_SQL_e_tabela.PNG "SQL e tabela resultante")
 
-#### Gráfico
+##### Gráfico
 ![Relatorio4](/Relatorio4_grafico.PNG "Gráfico Relatório 4")
 
+#### Relatório 5
+##### SQL e tabela resultante
+[![Relatório 5 - SQL e tabela resultante](/images/Relat%C3%B3rio%205%20-%20SQL%20e%20tabela.png?raw=true "Relatório 5 - SQL e tabela resultante.png")](https://colab.research.google.com/drive/1lrsPbcdy-wc4MUW8LwiNkffYOUNfv02o#scrollTo=-yqR4B1S-Tk7)
+
+##### Gráfico
+[![Relatório 5 - Gráfico](/images/Relat%C3%B3rio%205%20-%20Grafico.png?raw=true "Relatório 5 - Grafico.png")](https://colab.research.google.com/drive/1lrsPbcdy-wc4MUW8LwiNkffYOUNfv02o#scrollTo=xqjkma06j4bJ)
 
 ### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
