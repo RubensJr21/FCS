@@ -781,6 +781,7 @@ WHERE id IN (
 ```
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
 
+> link com as execuções: [9.3_Consultas](https://colab.research.google.com/drive/1RaOBSriPTxTlt4IVc3zR7wqvKcRLE1Ue?usp=sharing)
 
 #### a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
 ####  Consulta 1     
@@ -896,8 +897,32 @@ FROM VENDA
 ```
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
-    a) Criar minimo 3 de exclusão
-    b) Criar minimo 3 de atualização
+
+> link com as execuções: [9.5_Consultas](https://colab.research.google.com/drive/1RaOBSriPTxTlt4IVc3zR7wqvKcRLE1Ue?usp=sharing)
+
+#### a) Criar minimo 3 de exclusão
+
+####  Consulta 1     
+   ![9.5_a1.PNG](/9.5_a1.PNG?raw=true "9.5 - exclusão")
+
+#### Consulta 2
+   ![9.5_a2.PNG](/9.5_a2.PNG?raw=true "9.5 - exclusãos")
+
+#### Consulta 3 
+   ![9.5_a3.PNG](/9.5_a3.PNG?raw=true "9.5 - exclusão")
+
+    
+#### b) Criar minimo 3 de atualização
+
+####  Consulta 1     
+   ![9.5_b1.PNG](/9.5_b1.PNG?raw=true "9.5 - atualização")
+
+#### Consulta 2
+   ![9.5_b2.PNG](/9.5_b2.PNG?raw=true "9.5 - atualização")
+
+#### Consulta 3 
+   ![9.5_b3.PNG](/9.5_b3.PNG?raw=true "9.5 - atualização")
+
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
 > link com as execuções: [9.6	CONSULTAS COM INNER JOIN E ORDER BY - Google Colab](https://colab.research.google.com/drive/1rhLlMu7mWYlWDhWySO_g9ln-je3qjnFO#scrollTo=CZ8HmPa2pUx-)
@@ -934,7 +959,29 @@ ORDER BY nome
 ```
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
-    a) Criar minimo 2 envolvendo algum tipo de junção
+
+> link com as execuções: [9.7_Consultas](https://colab.research.google.com/drive/1RaOBSriPTxTlt4IVc3zR7wqvKcRLE1Ue?usp=sharing)
+
+#### a) Criar minimo 2 envolvendo algum tipo de junção
+
+####  Consulta 1     
+   ![9.7_a1.PNG](/9.7_a1.PNG?raw=true "9.7 - group by, funções de agrupamento")
+
+#### Consulta 2
+   ![9.7_a2.PNG](/9.7_a2.PNG?raw=true "9.7 - group by, funções de agrupamento")
+
+#### Consulta 3 
+   ![9.7_a3.PNG](/9.7_a3.PNG?raw=true "9.7 - group by, funções de agrupamento")
+
+#### Consulta 4     
+  ![9.7_a4.PNG](/9.7_a4.PNG?raw=true "9.7 - group by, funções de agrupamento")
+
+#### Consulta 5
+   ![9.7_a5.PNG](/9.7_a5.PNG?raw=true "9.7 - group by, funções de agrupamento")
+
+#### Consulta 6
+   ![9.7_a6.PNG](/9.7_a6.PNG?raw=true "9.7 - group by, funções de agrupamento")
+
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
 > link com as execuções: [9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN - Google Colab](https://colab.research.google.com/drive/1rhLlMu7mWYlWDhWySO_g9ln-je3qjnFO#scrollTo=hgqNBIVvpVNu)
@@ -963,8 +1010,31 @@ ON (c.FK_ENDERECOS_ID = e.id)
 ```
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
-        a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
-        b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
+
+> link com as execuções: [9.9_Consultas](https://colab.research.google.com/drive/1RaOBSriPTxTlt4IVc3zR7wqvKcRLE1Ue?usp=sharing)
+
+#### a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
+
+####  Consulta 1     
+   ![9.9_a.PNG](/9.9_a.PNG?raw=true "9.9 - self join e view")
+
+#### b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
+
+####  Consulta 1     
+   ![9.9_2.PNG](/9.9_2.PNG?raw=true "9.9 - self join e view")
+   
+####  Consulta 2     
+   ![9.9_3.PNG](/9.9_3.PNG?raw=true "9.9 - self join e view")
+
+####  Consulta 3     
+   ![9.9_4.PNG](/9.9_4.PNG?raw=true "9.9 - self join e view")
+
+####  Consulta 4    
+   ![9.9_5.PNG](/9.9_5.PNG?raw=true "9.9 - self join e view")
+
+ ####  Consulta 5     
+   ![9.9_6.PNG](/9.9_6.PNG?raw=true "9.9 - self join e view")
+
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
 > link com as execuções: [9.10	SUBCONSULTAS - Google Colab](https://colab.research.google.com/drive/1rhLlMu7mWYlWDhWySO_g9ln-je3qjnFO#scrollTo=bhMuG-CNpVfl)
