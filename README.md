@@ -749,6 +749,7 @@ VALUES
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE
+> link com as execuções: [9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE - Google Colab](https://colab.research.google.com/drive/1rhLlMu7mWYlWDhWySO_g9ln-je3qjnFO#scrollTo=dGZc7V3dpCWp)
 ```SQL
 -- OBTER SABORES DE UM PRODUTO [SABOR]
 SELECT s.sabor AS "sabores" FROM SABOR AS s
@@ -785,6 +786,7 @@ WHERE id IN (
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS<br>
+> link com as execuções: [9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS - Google Colab](https://colab.research.google.com/drive/1rhLlMu7mWYlWDhWySO_g9ln-je3qjnFO#scrollTo=UPzpc-yupT2e)
 ```SQL
 ======================= LIKE =======================
 
