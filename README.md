@@ -994,7 +994,7 @@ WHERE tipo = (
 ![Relatorio4](/Relatorio4_SQL_e_tabela.PNG "SQL e tabela resultante")
 
 #### Gráfico
-![Relatorio4](/Relatorio_4_grafico.PNG "Gráfico Relatório 4")
+![Relatorio4](/Relatorio4_grafico.PNG "Gráfico Relatório 4")
 
 
 ### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
