@@ -22,11 +22,11 @@ A prototipação foi feita utilizando a ferramenta do balsamiq cloud. Essa proto
 
 [![Protótipo FCS (Food Control System)](/images/Tela_Principal_Prototipo_FCS.png?raw=true "Arquivo PDF do Protótipo Balsamiq feito para Doces Sonhos")](/arquivos/FCS%20-%20Food%20Control%20System.pdf)
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-> Quais produtos são os mais vendidos?
-> Quais clientes efetuam mais compras?
-> Qual a forma de pagamento mais utilizada?
-> Em quais datas (do mês) as pessoas mais pedem (data de entrega)?
-> Em quais dias (da semana) as pessoas mais pedem (data de entrega)?
+> Quais produtos são os mais vendidos?<br>
+> Quais clientes efetuam mais compras?<br>
+> Qual a forma de pagamento mais utilizada?<br>
+> Em quais datas (do mês) as pessoas mais pedem (data de entrega)?<br>
+> Em quais dias (da semana) as pessoas mais pedem (data de entrega)?<br>
  
 #### 4.3 TABELA DE DADOS DO SISTEMA:
     
