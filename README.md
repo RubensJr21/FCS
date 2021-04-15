@@ -751,19 +751,25 @@ SELECT s.sabor AS "sabores" FROM SABOR AS s
 INNER JOIN PRODUTO AS p
 ON (p.id = s.fk_PRODUTOS_id)
 WHERE p.id = 'sonh'
-
+```
+![Item_9.2_exec_1.png](/images/Item_9.2_exec_1.png?raw=true "OBTER SABORES DE UM PRODUTO [SABOR]")
+```SQL
 -- OBTER DE UM DETERMINADO SABOR [SABOR]
 SELECT p.nome, s.sabor FROM SABOR as s
 INNER JOIN PRODUTO p
 ON s.fk_produtos_id = p.id
 WHERE sabor IN ('tradicional', 'chocolate')
-
+```
+![Item_9.2_exec_2.png](/images/Item_9.2_exec_2.png?raw=true "OBTER DE UM DETERMINADO SABOR [SABOR]")
+```SQL
 -- OBTER VENDAS COM O TOTAL MAIOR QUE (VALOR) [VENDA]
 SELECT v.id, c.nome, v.data_entrega as "data de entrega", v.hora_entrega as "hora da entrega", v.fk_forma_de_pagamento_tipo as "tipo de pagamento", v.valor_pago as "valor pago", v.total, obs FROM VENDA as v
 INNER JOIN CLIENTE c
 ON v.fk_clientes_id = c.id
 WHERE total > 9.5
-
+```
+![Item_9.2_exec_3.png](/images/Item_9.2_exec_3.png?raw=true "OBTER VENDAS COM O TOTAL MAIOR QUE (VALOR) [VENDA]")
+```SQL
 -- OBTER VENDAS COM HORÁRIO DE ENTREGA MAIOR QUE A MÉDIA [VENDA]
 SELECT * FROM VENDA
 WHERE id IN (
@@ -775,6 +781,8 @@ WHERE id IN (
         )
     )
 ```
+![Item_9.2_exec_4.png](/images/Item_9.2_exec_4.png?raw=true "OBTER VENDAS COM HORÁRIO DE ENTREGA MAIOR QUE A MÉDIA [VENDA]")
+
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
 
 > link com as execuções: [9.3_Consultas](https://colab.research.google.com/drive/1RaOBSriPTxTlt4IVc3zR7wqvKcRLE1Ue?usp=sharing)
