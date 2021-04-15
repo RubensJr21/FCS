@@ -1105,7 +1105,9 @@ ON (v.fk_CLIENTES_id = c.id)
 WHERE v.total > (
     SELECT AVG(total) FROM VENDA
 )
-
+```
+![Item_9.10_exec_1.png](/images/Item_9.10_exec_1.png?raw=true "FILTRANDO VALORES MAIORES QUE A MÉDIA")
+```SQL
 -- EXCLUINDO UM SABOR [VENDA_PRODUTO, SABOR]:
 SELECT * FROM VENDA_PRODUTO
 WHERE sabor IN (
@@ -1113,20 +1115,26 @@ WHERE sabor IN (
     FROM SABOR as S
     WHERE sabor <> 'tradicional'
 )
-
+```
+![Item_9.10_exec_2.png](/images/Item_9.10_exec_2.png?raw=true "EXCLUINDO UM SABOR [VENDA_PRODUTO, SABOR]")
+```SQL
 -- VENDAS COM O TOTAL À CIMA DA MÉDIA [VENDA]:
 SELECT * FROM VENDA
 WHERE total > (
     SELECT AVG(total)
     FROM VENDA
 )
-
+```
+![Item_9.10_exec_3.png](/images/Item_9.10_exec_3.png?raw=true "VENDAS COM O TOTAL À CIMA DA MÉDIA [VENDA]")
+```SQL
 -- PRODUTOS COM O PREÇO À CIMA DA MÉDIA [PRODUTO]:
 SELECT nome, valor FROM PRODUTO
 WHERE valor > (
     SELECT AVG(valor) FROM PRODUTO
 )
-
+```
+![Item_9.10_exec_4.png](/images/Item_9.10_exec_4.png?raw=true "PRODUTOS COM O PREÇO À CIMA DA MÉDIA [PRODUTO]")
+```SQL
 -- BUSCANDO TIPO DE LOUGRADORO COM A MAIOR NUMERO DE OCORRÊNCIAS:
 SELECT * FROM ENDERECO
 WHERE tipo = (
@@ -1137,6 +1145,7 @@ WHERE tipo = (
     )
 )
 ```
+![Item_9.10_exec_5.png](/images/Item_9.10_exec_5.png?raw=true "BUSCANDO TIPO DE LOUGRADORO COM A MAIOR NUMERO DE OCORRÊNCIAS")
 
 ### 10 RELATÓRIOS E GRÁFICOS
 
