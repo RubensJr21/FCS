@@ -1183,8 +1183,3 @@ WHERE tipo = (
 
 ##### Gráfico
 [![Relatório 5 - Gráfico](/images/Relat%C3%B3rio%205%20-%20Grafico.png?raw=true "Relatório 5 - Grafico.png")](https://colab.research.google.com/drive/1lrsPbcdy-wc4MUW8LwiNkffYOUNfv02o#scrollTo=xqjkma06j4bJ)
-
-### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
-
-#### a) Modelo (pecha kucha)<br>
-#### b) Tempo de apresentação 6:40
