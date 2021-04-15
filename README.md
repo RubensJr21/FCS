@@ -331,7 +331,6 @@ VALUES('Rua', 'Lírio dos Vales', 3, 'São Lucas', 'Vitória', 'ES', 'Fundos', '
 ('Avenida','Doutor João Carlos de Souza',724,'Vista Alegre', 'Serra','ES','casa','2900369'),
 ('Beco','Beija-Flor	Vitória',831,'Vila Nova', 'Vila Velha','ES','casa','2900521');
 
-
 /* INSERCAO - TABELA CLIENTE */
 
 INSERT INTO CLIENTE(id, nome, sobrenome, telefone, fk_ENDERECOS_id)
@@ -387,7 +386,6 @@ VALUES
 ('135', 'Érica', 'Rocha Siqueira', '3532-1111',49),
 ('101', 'Luiz Felipe', 'Andrade de Azevedo', '3222-4444',50);
 
--- Rubens: Produtos, categoria, pedido estado e forma de pagamento
 /* INSERCAO - TABELA CATEGORIA */
 
 INSERT INTO CATEGORIA(id, tipo)
@@ -745,8 +743,6 @@ VALUES
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 [![Print_Notebook_Colab_FCS.png](/images/Print_Notebook_Colab_FCS.png?raw=true "Notebook do FCS no Colab")](https://colab.research.google.com/github/RubensJr21/FCS/blob/master/Modelo_BD1_Iten_91_Trabalho_Grupo_Graziene_Lorhan_Rubens.ipynb#scrollTo=N0XOGRZl9nj0)
 
-># Marco de Entrega 01: Do item 1 até o item 9.1<br>
-
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE
 > link com as execuções: [9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE - Google Colab](https://colab.research.google.com/drive/1rhLlMu7mWYlWDhWySO_g9ln-je3qjnFO#scrollTo=dGZc7V3dpCWp)
 ```SQL
@@ -1079,13 +1075,7 @@ WHERE tipo = (
 )
 ```
 
-># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
-
 ### 10 RELATÓRIOS E GRÁFICOS
-
-#### a) análises e resultados provenientes do banco de dados desenvolvido (usar modelo disponível)
-#### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
-#### OBS: Esta é uma atividade de grande relevância no contexto do trabalho. Mantenha o foco nos 5 principais relatórios/resultados visando obter o melhor resultado possível.
 
 #### Relatório 1
 ##### SQL e tabela resultante
@@ -1125,49 +1115,4 @@ WHERE tipo = (
 ### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
 #### a) Modelo (pecha kucha)<br>
-#### b) Tempo de apresentação 6:40 
-
-># Marco de Entrega 03: Itens 10 e 11<br>
-<br>
-<br>
-<br> 
-
-
-
-### 12 FORMATACAO NO GIT:<br> 
-https://help.github.com/articles/basic-writing-and-formatting-syntax/
-<comentario no git>
-    
-##### About Formatting
-    https://help.github.com/articles/about-writing-and-formatting-on-github/
-    
-##### Basic Formatting in Git
-    
-    https://help.github.com/articles/basic-writing-and-formatting-syntax/#referencing-issues-and-pull-requests
-    
-    
-##### Working with advanced formatting
-    https://help.github.com/articles/working-with-advanced-formatting/
-#### Mastering Markdown
-    https://guides.github.com/features/mastering-markdown/
-
-    
-### OBSERVAÇÕES IMPORTANTES
-
-#### Todos os arquivos que fazem parte do projeto (Imagens, pdfs, arquivos fonte, etc..), devem estar presentes no GIT. Os arquivos do projeto vigente não devem ser armazenados em quaisquer outras plataformas.
-1. <strong>Caso existam arquivos com conteúdos sigilosos<strong>, comunicar o professor que definirá em conjunto com o grupo a melhor forma de armazenamento do arquivo.
-
-#### Todos os grupos deverão fazer Fork deste repositório e dar permissões administrativas ao usuário do git "profmoisesomena", para acompanhamento do trabalho.
-
-#### Os usuários criados no GIT devem possuir o nome de identificação do aluno (não serão aceitos nomes como Eu123, meuprojeto, pro456, etc). Em caso de dúvida comunicar o professor.
-
-
-Link para BrModelo:<br>
-http://www.sis4.com/brModelo/download.html
-<br>
-
-
-Link para curso de GIT<br>
-![https://www.youtube.com/curso_git](https://www.youtube.com/playlist?list=PLo7sFyCeiGUdIyEmHdfbuD2eR4XPDqnN2?raw=true "Title")
-
-
+#### b) Tempo de apresentação 6:40
