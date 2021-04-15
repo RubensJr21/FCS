@@ -829,32 +829,50 @@ WHERE id IN (
 > link com as execuções: [9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS - Google Colab](https://colab.research.google.com/drive/1rhLlMu7mWYlWDhWySO_g9ln-je3qjnFO#scrollTo=UPzpc-yupT2e)
 ```SQL
 ======================= LIKE =======================
+```
 
+```SQL
 -- Complementos que tem Apt
 SELECT * FROM ENDERECO WHERE complemento LIKE '%Apt%'
-
+```
+![Item_9.4_exec_1.png](/images/Item_9.4_exec_1.png?raw=true "Complementos que tem Apt")
+```SQL
 -- Sobrenomes que tem tem S
 SELECT * FROM CLIENTE WHERE sobrenome LIKE '%S%'
-
+```
+![Item_9.4_exec_2.png](/images/Item_9.4_exec_2.png?raw=true "Sobrenomes que tem tem S")
+```SQL
 -- Complementos que sejam apt ou Apt
 SELECT * FROM ENDERECO WHERE complemento ILIKE '%apt%'
-
+```
+![Item_9.4_exec_3.png](/images/Item_9.4_exec_3.png?raw=true "Complementos que sejam apt ou Apt")
+```SQL
 -- Sobrenomes que tem a letra s
 SELECT * FROM CLIENTE WHERE sobrenome ILIKE '%s%'
-
+```
+![Item_9.4_exec_4.png](/images/Item_9.4_exec_4.png?raw=true "Sobrenomes que tem a letra s")
+```SQL
 -- Sobrenomes que começem com S
 SELECT * FROM CLIENTE WHERE sobrenome LIKE 'S%'
-
+```
+![Item_9.4_exec_5.png](/images/Item_9.4_exec_5.png?raw=true "Sobrenomes que começem com S")
+```SQL
 -- Sobrenomes que começem com A
 SELECT * FROM CLIENTE WHERE sobrenome LIKE 'A%'
-
+```
+![Item_9.4_exec_6.png](/images/Item_9.4_exec_6.png?raw=true "Sobrenomes que começem com A")
+```SQL
 ======================= DATAS =======================
+```
 
+```SQL
 CURDATE:
 -- OBTEM HÁ QUANTO TEMPO A VENDA FOI REGISTRADA
 SELECT id, data_registro AS "Data de registro", CURRENT_DATE-(data_registro) AS "Registrado há:", total FROM VENDA
 WHERE CURRENT_DATE-(data_registro) >= 2207
-
+```
+![Item_9.4_exec_7.png](/images/Item_9.4_exec_7.png?raw=true "OBTEM HÁ QUANTO TEMPO A VENDA FOI REGISTRADA")
+```SQL
 -- OBTEM A DIFERENÇA ENTRE O HORÁRIO ATUAL E O HORÁRIO DA ENTREGA
 SELECT id, data_registro AS "Data de registro",
 TO_CHAR(
@@ -862,7 +880,9 @@ TO_CHAR(
     , 'HH24:MI:SS'
 )
 AS "Tempo para a entrega", total FROM VENDA
-
+```
+![Item_9.4_exec_8.png](/images/Item_9.4_exec_8.png?raw=true "OBTEM A DIFERENÇA ENTRE O HORÁRIO ATUAL E O HORÁRIO DA ENTREGA")
+```SQL
 -- OBTEM A DIFERENÇA ENTRE O HORÁRIO ATUAL E O HORÁRIO DA ENTREGA
 SELECT id, data_registro AS "Data de registro",
 TO_CHAR(
@@ -874,13 +894,17 @@ TO_CHAR(
 )
 AS "Tempo para a entrega", total FROM VENDA
 ORDER BY "Tempo para a entrega"
-
+```
+![Item_9.4_exec_9.png](/images/Item_9.4_exec_9.png?raw=true "OBTEM A DIFERENÇA ENTRE O HORÁRIO ATUAL E O HORÁRIO DA ENTREGA")
+```SQL
 AGE():
 -- OBTEM A DIFERENÇA DE TEMPO ENTRE REGISTRO E ENTREGA
 SELECT id, data_registro AS "Data de registro", AGE(data_registro, data_entrega) AS "Dierença de tempo entre registro e entrega"
 FROM VENDA
 ORDER BY "Data de registro"
-
+```
+![Item_9.4_exec_10.png](/images/Item_9.4_exec_10.png?raw=true "OBTEM A DIFERENÇA DE TEMPO ENTRE REGISTRO E ENTREGA")
+```SQL
 DATE_PART():
 -- OBTEM A DIA E MES DA ENTREGA
 SELECT id, data_registro AS "Data de registro", CONCAT(
@@ -890,7 +914,9 @@ SELECT id, data_registro AS "Data de registro", CONCAT(
 ) AS "Dia/mês da entrega"
 FROM VENDA
 ORDER BY "Data de registro"
-
+```
+![Item_9.4_exec_11.png](/images/Item_9.4_exec_11.png?raw=true "OBTEM A DIA E MES DA ENTREGA")
+```SQL
 EXTRACT():
 SELECT id, data_registro, data_registro AS "Data de registro", CONCAT(
     TO_CHAR(EXTRACT('day' FROM data_registro), 'FM00'),
@@ -899,6 +925,7 @@ SELECT id, data_registro, data_registro AS "Data de registro", CONCAT(
 ) AS "Dia/mês da entrega"
 FROM VENDA
 ```
+![Item_9.4_exec_12.png](/images/Item_9.4_exec_12.png?raw=true "")
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 
