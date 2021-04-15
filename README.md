@@ -959,35 +959,52 @@ FROM VENDA
 > link com as execuções: [9.6	CONSULTAS COM INNER JOIN E ORDER BY - Google Colab](https://colab.research.google.com/drive/1rhLlMu7mWYlWDhWySO_g9ln-je3qjnFO#scrollTo=CZ8HmPa2pUx-)
 ```SQL
 INNER JOIN:
+```
+
+```SQL
 -- VENDA QUE TAL CLIENTE COMPROU [VENDA, CLIENTE]
 SELECT v.id AS "id venda", CONCAT(c.nome, ' ', c.sobrenome) AS "nome", v.data_entrega AS "data de entrega", v.total FROM VENDA AS v
 INNER JOIN CLIENTE AS c
 ON (v.fk_CLIENTES_id = c.id)
-
+```
+![Item_9.6_exec_1.png](/images/Item_9.6_exec_1.png?raw=true "VENDA QUE TAL CLIENTE COMPROU [VENDA, CLIENTE]")
+```SQL
 -- MOSTRAR SABORES DOS PRODUTOS [PRODUTOS, SABOR]
 SELECT p.nome, s.sabor, p.active AS "ativo" FROM PRODUTO AS p
 INNER JOIN SABOR AS s
 ON (s.fk_PRODUTOS_id = p.id)
-
+```
+![Item_9.6_exec_2.png](/images/Item_9.6_exec_2.png?raw=true "MOSTRAR SABORES DOS PRODUTOS [PRODUTOS, SABOR]")
+```SQL
 ORDER BY:
+```
+
+```SQL
 -- ORDENAR VENDAS POR VALOR TOTAL (ASC) [VENDA]
 SELECT * FROM VENDA
 ORDER BY VENDA.total
-
+```
+![Item_9.6_exec_3.png](/images/Item_9.6_exec_3.png?raw=true "ORDENAR VENDAS POR VALOR TOTAL (ASC) [VENDA]")
+```SQL
 -- ORDENAR VENDAS PELA DATA DE ENTREGA (DESC) [VENDA]
 SELECT * FROM VENDA
 ORDER BY VENDA.data_entrega DESC
-
+```
+![Item_9.6_exec_4.png](/images/Item_9.6_exec_4.png?raw=true "ORDENAR VENDAS PELA DATA DE ENTREGA (DESC) [VENDA]")
+```SQL
 -- ORDERNAR ITEM DA VENDA PELOS VALORES (DESC) [VENDA_PRODUTO]
 SELECT p.nome, v.fk_VENDAS_id, v.qtd, v.valor FROM VENDA_PRODUTO AS v
 INNER JOIN PRODUTO AS p
 ON (p.id = v.fk_PRODUTOS_id)
 ORDER BY v.valor DESC
-
+```
+![Item_9.6_exec_5.png](/images/Item_9.6_exec_5.png?raw=true "ORDERNAR ITEM DA VENDA PELOS VALORES (DESC) [VENDA_PRODUTO]")
+```SQL
 -- ORDENAR CLIENTES EM ORDEM ALFABÉTICA (ASC) [CLIENTE]
 SELECT nome, sobrenome, telefone FROM CLIENTE
 ORDER BY nome
 ```
+![Item_9.6_exec_6.png](/images/Item_9.6_exec_6.png?raw=true "ORDENAR CLIENTES EM ORDEM ALFABÉTICA (ASC) [CLIENTE]")
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
 
