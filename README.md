@@ -1035,27 +1035,38 @@ ORDER BY nome
 > link com as execuções: [9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN - Google Colab](https://colab.research.google.com/drive/1rhLlMu7mWYlWDhWySO_g9ln-je3qjnFO#scrollTo=hgqNBIVvpVNu)
 ```SQL
 LEFT:
+```
+
+```SQL
 -- PRODUTOS VENDIDOS EM UMA VENDA [VENDA_PRODUTO, PRODUTO]
 SELECT p.nome FROM PRODUTO AS p LEFT OUTER JOIN VENDA_PRODUTO AS v
 ON (v.FK_PRODUTOS_id = p.id)
 WHERE v.fk_vendas_id = 23
 LIMIT 2
-
+```
+![Item_9.8_exec_1.png](/images/Item_9.8_exec_1.png?raw=true "PRODUTOS VENDIDOS EM UMA VENDA [VENDA_PRODUTO, PRODUTO]")
+```SQL
 -- CLIENTES QUE JÁ COMPRARAM [CLIENTE, VENDA]
 SELECT c.nome, c.sobrenome, c.telefone, TO_CHAR(v.id, 'FM00') as "id venda" FROM CLIENTE AS c LEFT OUTER JOIN VENDA AS v
 ON (c.id = v.FK_CLIENTES_id)
 LIMITE 13
-
+```
+![Item_9.8_exec_2.png](/images/Item_9.8_exec_2.png?raw=true "CLIENTES QUE JÁ COMPRARAM [CLIENTE, VENDA]")
+```SQL
 RIGHT:
 -- PRODUTOS QUE JÁ FORAM VENDIDOS PELO MENOS EM UMA VENDA[VENDA_PRODUTO, PRODUTO]
 SELECT p.nome FROM VENDA_PRODUTO AS v RIGHT OUTER JOIN PRODUTO AS p
 ON (v.FK_PRODUTOS_id = p.id)
-
+```
+![Item_9.8_exec_3.png](/images/Item_9.8_exec_3.png?raw=true "PRODUTOS QUE JÁ FORAM VENDIDOS PELO MENOS EM UMA VENDA[VENDA_PRODUTO, PRODUTO]")
+```SQL
 FULL:
 -- ENDEREÇO DOS CLIENTES [CLIENTE, ENDERECO]
 SELECT * FROM CLIENTE AS c FULL OUTER JOIN ENDERECO AS e
 ON (c.FK_ENDERECOS_ID = e.id)
+
 ```
+![Item_9.8_exec_4.png](/images/Item_9.8_exec_4.png?raw=true "ENDEREÇO DOS CLIENTES [CLIENTE, ENDERECO]")
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
 
